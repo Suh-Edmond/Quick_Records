@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: quick_records
+
+server:
+  port: 8000
+  servlet:
+    context-path: /record-management
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

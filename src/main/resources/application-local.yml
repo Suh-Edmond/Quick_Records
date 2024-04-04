@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Quick Record Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/quick_record_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Summer123!
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /record-management
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
